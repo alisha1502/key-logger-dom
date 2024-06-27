@@ -1,0 +1,95 @@
+.key-logger-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.key-logger {
+    background-color: azure;
+    border: 2px solid burlywood;
+    color: cornflowerblue;
+    border-radius: 4px;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.description {
+    font-style: italic;
+    text-align: center;
+}
+
+.controls-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.start-btn,
+.stop-btn,
+.clear-log-btn,
+.download-log-btn,
+.pause-btn,
+.resume-btn {
+    background-color: azure;
+    border: 2px solid burlywood;
+    border-radius: 4px;
+    padding: 10px;
+    width: 15%;
+    min-width: 100px;
+    margin: 5px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.log,
+.status {
+    width: 46%;
+    height: 5rem;
+    border: 2px solid #a4bbcc;
+    border-radius: 4px;
+    overflow: auto;
+    margin: 5px;
+}
+
+@media screen and (max-width: 425px) {
+    .key-logger-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .controls-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        gap: 4px;
+    }
+
+    .start-btn,
+    .stop-btn,
+    .clear-log-btn,
+    .download-log-btn,
+    .pause-btn,
+    .resume-btn {
+        width: 100%;
+        word-wrap: break-word;
+        cursor: pointer;
+    }
+
+    .log,
+    .status {
+        width: 100%;
+    }
+
+}
